@@ -1,0 +1,61 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.db
+*.log
+
+# Compiled files
+target/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse/STS
+.metadata/
+bin/
+.tmp/
+*.log
+*.bak
+*.swp
+*.swo
+.DS_Store
+
+# Maven
+.mvn/
+target/
+.idea/
+
+# Gradle
+.gradle/
+build/
+
+# Spring Boot
+*.jar
+*.war
+*.ear
+*.db
+
+# Node.js (if you have any frontend code)
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Other IDEs and tools
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Application-specific config
+config/
+
+# Exclude sensitive files
+*.env
+*.properties
+*.yml
