@@ -82,12 +82,17 @@ The server will start at **http://localhost:8080**
 
 ## 🖼 Recommended Screenshots  
 🔹 **Swagger API Documentation** (`/swagger-ui`)  
-![Login Request](screenshots/swagger_ui.png)  
+![Swagger Doc](screenshots/swagger_ui.png)  
 🔹 **Database Schema (ER Diagram)**  
-🔹 **Postman Requests (Login, Transfer, Balance Inquiry)**  
-🔹 **Email Notifications for Transactions**  
-
-📌 **Add screenshots here** for better visualization!  
+![Database Schema](screenshots/db_schema.png)
+🔹 **Postman API Requests (Login, Transfer, Balance Inquiry)**  
+![Postman Requests](screenshots/postman_apis.png)  
+🔹 **Email Notifications**  
+![Email Notification](screenshots/email_notification.png)    
+🔹 **Statements PDF**  
+![Statements PDF](screenshots/statement_pdf.png) 
+🔹 **Application Running in STS**  
+![STS Console](screenshots/sts_console.png) 
 
 ---
 
