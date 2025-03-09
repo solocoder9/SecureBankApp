@@ -114,7 +114,7 @@ Want to improve this project? Feel free to fork, create a pull request, or raise
 
 🔗 **GitHub Repository**: [SecureBankApp](https://github.com/solocoder9/SecureBankApp)  
 
-💎 **Contact**: [Subham Subhakanta Rout](mailto:your-email@example.com)  
+💎 **Contact**: [Solo Coder](mailto:solocoder9@gmail.com)  
 
 ---
 
