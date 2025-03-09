@@ -1,5 +1,5 @@
 # 🏦 Secure Banking Application  
-![Secure Banking App](https://img.shields.io/badge/Version-1.0-blue) ![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green) ![Java](https://img.shields.io/badge/Java-17-orange)  
+![Secure Banking App](https://img.shields.io/badge/Version-1.0-blue) ![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green) ![Java](https://img.shields.io/badge/Java-17-orange) ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue) ![Hibernate](https://img.shields.io/badge/Hibernate-6.5-yellow) ![Maven](https://img.shields.io/badge/Maven-3.9-red) ![JWT](https://img.shields.io/badge/JWT-Auth-purple) ![REST API](https://img.shields.io/badge/REST-API-lightgrey)   
 
 ## 🚀 Overview  
 Secure Banking Application is a **RESTful API-based banking system** built using **Spring Boot**. It provides essential banking functionalities such as **user account management, fund transfers, debit/credit operations, and balance inquiries** with a focus on **security and performance**.  
