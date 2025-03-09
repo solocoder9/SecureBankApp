@@ -1,7 +1,8 @@
-# 💼 Secure Banking Application
+# 🔒 Secure Banking Application  
+![Secure Banking App](https://img.shields.io/badge/Version-1.0-blue) ![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green) ![Java](https://img.shields.io/badge/Java-17-orange)  
 
-## 🚀 Overview
-The **Secure Banking Application** is a RESTful API-based banking system that enables secure user account management, fund transfers, and transaction inquiries. Built using **Spring Boot**, this application ensures smooth and secure financial operations.
+## 🚀 Overview  
+Secure Banking Application is a **RESTful API-based banking system** built using **Spring Boot**. It provides essential banking functionalities such as **user account management, fund transfers, debit/credit operations, and balance inquiries** with a focus on **security and performance**.  
 
 ## ✨ Features
 - 🔐 **User Registration & Authentication** - Secure login and registration.
@@ -10,99 +11,98 @@ The **Secure Banking Application** is a RESTful API-based banking system that en
 - 📈 **Bank Statements** - Retrieve transaction history.
 - 👤 **User Balance Inquiry** - Check account balance anytime.
 - 🛡️ **Security** - Built-in authentication and secure endpoints.
+- 📜 **Swagger API Documentation** - Accessible at `/swagger-ui` 
 
-## 🛠️ Tech Stack
-- **Back-End:** Java, Spring Boot, Spring Security, Hibernate
-- **Database:** MySQL
-- **Server:** Apache Tomcat
-- **Build Tool:** Maven
-- **IDE:** Eclipse / IntelliJ IDEA
+---
 
-## 📃 API Endpoints
-### 👥 User Management
-- **POST** `/api/user` - Create a new user account.
-- **POST** `/api/user/login` - User login authentication.
+## 📱 API Endpoints  
+🔹 **User Management**  
+- `POST /api/user` → Register a new user  
+- `POST /api/user/login` → User login (JWT authentication)  
 
-### 💸 Transactions
-- **POST** `/api/user/transfer` - Transfer funds between accounts.
-- **POST** `/api/user/debit` - Withdraw money from an account.
-- **POST** `/api/user/credit` - Deposit money into an account.
+🔹 **Account Transactions**  
+- `POST /api/user/transfer` → Transfer funds  
+- `POST /api/user/debit` → Debit from account  
+- `POST /api/user/credit` → Credit account  
 
-### 📊 Inquiry
-- **GET** `/api/user/nameInquiry` - Retrieve user details by name.
-- **GET** `/api/user/balanceInquiry` - Check account balance.
-- **GET** `/bankStatement` - View bank statement and transaction history.
+🔹 **Account Inquiries**  
+- `GET /api/user/nameInquiry` → Fetch user name  
+- `GET /api/user/balanceInquiry` → Get account balance  
+- `GET /bankStatement` → Get transaction history  
 
-## 📑 Prerequisites
-Ensure you have the following installed:
-- ☕ Java 8 or later - [Download Here](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
-- 💪 Apache Maven - [Download Here](https://maven.apache.org/download.cgi)
-- 💳 MySQL Database - [Download Here](https://dev.mysql.com/downloads/)
-- 💻 Eclipse IDE - [Download Here](https://www.eclipse.org/downloads/)
-- 🛠️ Apache Tomcat - [Download Here](https://tomcat.apache.org/download-90.cgi)
+---
 
-## 🚦 Setup Instructions
-1. **Clone the Repository**
-   ```sh
-   git clone https://github.com/solocoder9/SecureBankApp.git
-   cd SecureBankApp
-   ```
-2. **Import Project in Eclipse**
-   - Open Eclipse IDE.
-   - Go to **File > Import > Existing Maven Projects**.
-   - Select the cloned repository directory and click **Finish**.
-3. **Configure Database**
-   - Create a database in MySQL:
-     ```sql
-     CREATE DATABASE secure_bank;
-     ```
-   - Update database connection details in `application.properties`.
-4. **Build and Run the Project**
-   ```sh
-   mvn clean install
-   mvn spring-boot:run
-   ```
-5. **Access the Application**
-   - Open your browser and navigate to:
-     ```
-     http://localhost:8080/v3/api-docs
-     ```
+## 🛠 Installation & Setup  
 
-## 🤖 Usage
-1. **Register** - Create a new user account.
-2. **Login** - Authenticate and access banking features.
-3. **Manage Transactions** - Deposit, withdraw, and transfer funds securely.
-4. **Check Balance** - View account balance in real-time.
-5. **View Statements** - Retrieve transaction history for better financial tracking.
+### 1️⃣ **Clone the Repository**  
+```sh
+git clone https://github.com/solocoder9/SecureBankApp.git
+cd SecureBankApp
+```
 
-## 📦 Dependencies
-- **Spring Boot** - Framework for building Java applications.
-- **Spring Security** - Authentication and authorization.
-- **Hibernate** - ORM framework for database interactions.
-- **MySQL Connector** - Database connection driver.
-- **Swagger** - API documentation and testing.
+### 2️⃣ **Set Up the Database**  
+Create a **MySQL database** named `secure_bank_db` and update `application.properties`:  
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/secure_bank_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+```
 
-## 🙏 Contribution Guidelines
-1. **Fork the repository.**
-2. **Create a new branch:**
-   ```sh
-   git checkout -b feature-branch
-   ```
-3. **Commit changes:**
-   ```sh
-   git commit -m "Add new feature"
-   ```
-4. **Push changes:**
-   ```sh
-   git push origin feature-branch
-   ```
-5. **Open a pull request.**
+### 3️⃣ **Build & Run the Application**  
+```sh
+mvn clean install
+mvn spring-boot:run
+```
+The server will start at **http://localhost:8080**  
 
-## 📃 License
-This project is licensed under the **MIT License**. See `LICENSE` for details.
+### 4️⃣ **Access API Documentation (Swagger UI)**  
+📜 Open [http://localhost:8080/swagger-ui/](http://localhost:8080/swagger-ui/)  
 
-## 👤 Contact
-For questions or suggestions, feel free to reach out:
-- **Email:** solocoder9@gmail.com
-- **GitHub:** [solocoder9](https://github.com/solocoder9)
+---
 
+## 🏠 Technologies Used  
+- **Spring Boot 3.0** (Backend Framework)  
+- **Spring Security & JWT** (Authentication & Authorization)  
+- **Hibernate & JPA** (Database ORM)  
+- **MySQL** (Relational Database)  
+- **Swagger 3.0** (API Documentation)  
+- **Lombok** (Reducing Boilerplate Code)  
+- **Maven** (Build Automation)  
+
+---
+
+## 🖼 Recommended Screenshots  
+🔹 **Swagger API Documentation** (`/swagger-ui`)  
+🔹 **Database Schema (ER Diagram)**  
+🔹 **Postman Requests (Login, Transfer, Balance Inquiry)**  
+
+📌 **Add screenshots here** for better visualization!  
+
+---
+
+## 🔒 Security Measures  
+✔ **JWT-based authentication** to secure API endpoints  
+✔ **Role-based access control (RBAC)**  
+✔ **Input validation & exception handling**  
+✔ **Spring Security for request filtering**  
+
+---
+
+## 🚀 Future Enhancements  
+🔹 Implement **Two-Factor Authentication (2FA)**  
+🔹 Add **email/SMS notifications** for transactions  
+🔹 Integrate **GraphQL API** for flexible queries  
+🔹 UI Dashboard for user account management  
+
+---
+
+## 🤝 Contributing  
+Want to improve this project? Feel free to fork, create a pull request, or raise an issue!  
+
+🔗 **GitHub Repository**: [SecureBankApp](https://github.com/solocoder9/SecureBankApp)  
+
+💎 **Contact**: [Subham Subhakanta Rout](mailto:your-email@example.com)  
+
+---
+
+🎯 **If you like this project, don't forget to ⭐ star the repository!** 🚀
