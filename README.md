@@ -1,4 +1,4 @@
-# 🔒 Secure Banking Application  
+# 🏦 Secure Banking Application  
 ![Secure Banking App](https://img.shields.io/badge/Version-1.0-blue) ![Spring Boot](https://img.shields.io/badge/SpringBoot-3.0-green) ![Java](https://img.shields.io/badge/Java-17-orange)  
 
 ## 🚀 Overview  
@@ -12,23 +12,24 @@ Secure Banking Application is a **RESTful API-based banking system** built using
 - 👤 **User Balance Inquiry** - Check account balance anytime.
 - 🛡️ **Security** - Built-in authentication and secure endpoints.
 - 📜 **Swagger API Documentation** - Accessible at `/swagger-ui` 
+- 📧 **Email Notifications** - Receive emails for user registration, fund transfers, and bank statements with a PDF attachment.
 
 ---
 
 ## 📱 API Endpoints  
 🔹 **User Management**  
-- `POST /api/user` → Register a new user  
+- `POST /api/user` → Register a new user (Sends a confirmation email)  
 - `POST /api/user/login` → User login (JWT authentication)  
 
 🔹 **Account Transactions**  
-- `POST /api/user/transfer` → Transfer funds  
+- `POST /api/user/transfer` → Transfer funds (Emails sent to sender & receiver)  
 - `POST /api/user/debit` → Debit from account  
 - `POST /api/user/credit` → Credit account  
 
 🔹 **Account Inquiries**  
 - `GET /api/user/nameInquiry` → Fetch user name  
 - `GET /api/user/balanceInquiry` → Get account balance  
-- `GET /bankStatement` → Get transaction history  
+- `GET /bankStatement` → Get transaction history (Statement emailed with PDF attachment)  
 
 ---
 
@@ -46,6 +47,12 @@ Create a **MySQL database** named `secure_bank_db` and update `application.prope
 spring.datasource.url=jdbc:mysql://localhost:3306/secure_bank_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your-email@gmail.com
+spring.mail.password=your-email-password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
 ```
 
 ### 3️⃣ **Build & Run the Application**  
@@ -67,6 +74,8 @@ The server will start at **http://localhost:8080**
 - **MySQL** (Relational Database)  
 - **Swagger 3.0** (API Documentation)  
 - **Lombok** (Reducing Boilerplate Code)  
+- **JavaMail API** (Email Notifications)  
+- **Apache PDFBox** (PDF Generation)  
 - **Maven** (Build Automation)  
 
 ---
@@ -75,6 +84,7 @@ The server will start at **http://localhost:8080**
 🔹 **Swagger API Documentation** (`/swagger-ui`)  
 🔹 **Database Schema (ER Diagram)**  
 🔹 **Postman Requests (Login, Transfer, Balance Inquiry)**  
+🔹 **Email Notifications for Transactions**  
 
 📌 **Add screenshots here** for better visualization!  
 
@@ -85,6 +95,8 @@ The server will start at **http://localhost:8080**
 ✔ **Role-based access control (RBAC)**  
 ✔ **Input validation & exception handling**  
 ✔ **Spring Security for request filtering**  
+✔ **Email verification for account registration**  
+✔ **Email alerts for fund transfers & statement generation**  
 
 ---
 
@@ -93,6 +105,7 @@ The server will start at **http://localhost:8080**
 🔹 Add **email/SMS notifications** for transactions  
 🔹 Integrate **GraphQL API** for flexible queries  
 🔹 UI Dashboard for user account management  
+🔹 Implement **Scheduled Statements** (monthly auto-generated statements)  
 
 ---
 
@@ -106,3 +119,4 @@ Want to improve this project? Feel free to fork, create a pull request, or raise
 ---
 
 🎯 **If you like this project, don't forget to ⭐ star the repository!** 🚀
+
